@@ -1,0 +1,1503 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黄仓库官网_官方视频平台 | 老货仓里的新影像</title>
+<meta name="description" content="黄仓库官方网站是聚焦仓储美学与旧物新生的原创视频平台，汇聚高清影像、创作者社区与企业品牌故事，持续运营值得信赖的品质内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2a24'/%3E%3Cpath d='M14 24h36v26H14z' fill='%23d9a441'/%3E%3Cpath d='M14 24l6-9h24l6 9z' fill='%23f0c674'/%3E%3Crect x='27' y='33' width='10' height='17' fill='%231f2a24'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --hw-green:#1f2a24;
+    --hw-green-2:#2f3d34;
+    --hw-amber:#d9a441;
+    --hw-amber-soft:#f0c674;
+    --hw-canvas:#f4f1e8;
+    --hw-paper:#fffdf7;
+    --hw-line:#d8d2c2;
+    --hw-ink:#22281f;
+    --hw-muted:#6d7267;
+    --hw-shadow:0 10px 30px rgba(31,42,36,.10);
+    --hw-head:104px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--hw-canvas);
+    color:var(--hw-ink);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    font-size:16px;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;}
+  .hw-wrap{width:min(1180px,92vw);margin:0 auto;}
+  .hw-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+
+  /* ---------- 吸顶公告 + 页头 ---------- */
+  .hw-topbar{position:sticky;top:0;z-index:60;}
+  .hw-announce{
+    background:var(--hw-green);
+    color:#f6f1e3;
+    font-size:13.5px;
+    letter-spacing:.02em;
+    display:flex;align-items:center;gap:14px;
+    padding:9px 0;
+    overflow:hidden;
+  }
+  .hw-announce .hw-wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .hw-announce-tag{
+    background:var(--hw-amber);color:#1f2a24;font-weight:700;
+    padding:1px 9px;border-radius:3px;font-size:12px;letter-spacing:.08em;white-space:nowrap;
+  }
+  .hw-announce-text{min-width:0;}
+  .hw-announce-time{color:#b9c0b4;font-size:12.5px;white-space:nowrap;margin-left:auto;}
+  .hw-header{
+    background:rgba(255,253,247,.96);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--hw-line);
+    box-shadow:0 2px 14px rgba(31,42,36,.05);
+  }
+  .hw-header-inner{
+    display:flex;align-items:center;gap:26px;
+    padding:12px 0;
+  }
+  .hw-logo{display:flex;align-items:center;gap:11px;flex-shrink:0;}
+  .hw-logo-mark{
+    width:42px;height:42px;border-radius:9px;background:var(--hw-green);
+    display:grid;place-items:center;position:relative;overflow:hidden;
+  }
+  .hw-logo-mark::before{content:"";position:absolute;top:7px;left:6px;right:6px;height:5px;background:var(--hw-amber-soft);border-radius:2px 2px 0 0;}
+  .hw-logo-mark::after{content:"";position:absolute;top:13px;left:8px;right:8px;bottom:8px;background:var(--hw-amber);border-radius:1px;}
+  .hw-logo-mark span{position:relative;z-index:2;width:9px;height:15px;background:var(--hw-green);border-radius:1px;margin-top:7px;}
+  .hw-logo-text strong{display:block;font-size:19px;letter-spacing:.06em;line-height:1.2;}
+  .hw-logo-text small{display:block;font-size:11px;letter-spacing:.22em;color:var(--hw-muted);}
+  .hw-nav{display:flex;align-items:center;gap:4px;margin-left:auto;flex-wrap:wrap;}
+  .hw-nav a{
+    padding:7px 12px;font-size:14.5px;color:#3a4238;border-radius:6px;transition:.18s;
+  }
+  .hw-nav a:hover{background:#ece8db;color:var(--hw-green);}
+  .hw-search{display:flex;align-items:center;gap:0;border:1px solid var(--hw-line);border-radius:999px;background:#fff;overflow:hidden;padding:3px 4px 3px 12px;}
+  .hw-search input{
+    border:0;outline:0;background:transparent;font-size:14px;width:132px;padding:5px 4px;color:var(--hw-ink);
+  }
+  .hw-search button{
+    border:0;background:var(--hw-amber);color:#1f2a24;font-weight:600;font-size:13px;
+    border-radius:999px;padding:5px 14px;transition:.18s;
+  }
+  .hw-search button:hover{background:var(--hw-amber-soft);}
+  .hw-nav-toggle{
+    display:none;border:1px solid var(--hw-line);background:#fff;border-radius:8px;
+    width:40px;height:38px;font-size:18px;color:var(--hw-green);margin-left:auto;
+  }
+  .hw-search-feedback{
+    display:none;font-size:13px;color:var(--hw-muted);
+    border-top:1px solid var(--hw-line);background:#fdfbf3;padding:6px 0;
+  }
+  .hw-search-feedback.is-on{display:block;}
+  .hw-search-feedback .hw-wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+  .hw-chip{
+    border:1px solid var(--hw-line);background:#fff;border-radius:999px;
+    padding:3px 11px;font-size:12.5px;color:#4a5245;transition:.16s;
+  }
+  .hw-chip:hover,.hw-chip.is-active{background:var(--hw-green);color:#f4f1e8;border-color:var(--hw-green);}
+
+  section[id]{scroll-margin-top:calc(var(--hw-head) + 18px);}
+
+  /* ---------- 首屏 ---------- */
+  .hw-hero{padding:52px 0 60px;position:relative;overflow:hidden;}
+  .hw-hero::before{
+    content:"";position:absolute;right:-160px;top:-120px;width:520px;height:520px;
+    background:radial-gradient(circle,rgba(217,164,65,.20),transparent 68%);
+    border-radius:50%;pointer-events:none;
+  }
+  .hw-hero-grid{
+    display:grid;grid-template-columns:5fr 6fr;gap:46px;align-items:center;position:relative;
+  }
+  .hw-hero-kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.16em;
+    color:#7c6a37;background:#f6ecd2;border:1px solid #e6d6ac;border-radius:999px;
+    padding:4px 14px;margin-bottom:20px;
+  }
+  .hw-hero-kicker i{width:7px;height:7px;border-radius:50%;background:var(--hw-amber);display:inline-block;}
+  h1.hw-hero-title{
+    font-size:clamp(40px,6.4vw,74px);
+    line-height:1.06;margin:0 0 18px;letter-spacing:.03em;color:var(--hw-green);
+    font-weight:800;
+  }
+  .hw-hero-title em{
+    font-style:normal;color:var(--hw-amber);position:relative;display:inline-block;
+  }
+  .hw-hero-title em::after{
+    content:"";position:absolute;left:2px;right:2px;bottom:4px;height:10px;
+    background:rgba(217,164,65,.20);z-index:-1;border-radius:2px;
+  }
+  .hw-hero-lead{font-size:16.5px;color:#4a5147;margin:0 0 18px;max-width:34em;}
+  .hw-hero-intro{
+    font-size:14.5px;color:#5b6156;background:var(--hw-paper);border-left:3px solid var(--hw-amber);
+    padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 24px;
+  }
+  .hw-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px;}
+  .hw-btn{
+    border:0;border-radius:8px;padding:11px 22px;font-size:14.5px;font-weight:600;
+    transition:.18s;display:inline-flex;align-items:center;gap:7px;
+  }
+  .hw-btn-primary{background:var(--hw-green);color:#f6f1e3;}
+  .hw-btn-primary:hover{background:var(--hw-green-2);transform:translateY(-1px);}
+  .hw-btn-ghost{background:transparent;color:var(--hw-green);border:1px solid #c3bda9;}
+  .hw-btn-ghost:hover{background:#ece8db;border-color:var(--hw-green);}
+  .hw-hero-stats{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+    border-top:1px solid var(--hw-line);padding-top:20px;
+  }
+  .hw-hero-stat b{display:block;font-size:24px;color:var(--hw-green);letter-spacing:.02em;line-height:1.2;}
+  .hw-hero-stat span{font-size:12.5px;color:var(--hw-muted);}
+  .hw-hero-visual{position:relative;}
+  .hw-hero-visual figure{margin:0;border-radius:14px;overflow:hidden;box-shadow:var(--hw-shadow);border:1px solid #e2dccb;}
+  .hw-hero-visual img{width:100%;aspect-ratio:16/11;object-fit:cover;}
+  .hw-hero-caption{
+    position:absolute;left:16px;bottom:16px;right:16px;
+    background:rgba(31,42,36,.86);color:#f4efe1;border-radius:9px;
+    padding:11px 14px;font-size:13px;display:flex;align-items:center;gap:10px;
+  }
+  .hw-play-dot{
+    width:26px;height:26px;border-radius:50%;background:var(--hw-amber);flex-shrink:0;
+    display:grid;place-items:center;color:#1f2a24;font-size:11px;
+  }
+  .hw-hero-badge{
+    position:absolute;top:-14px;right:-10px;background:var(--hw-amber);color:#1f2a24;
+    font-size:12.5px;font-weight:700;padding:6px 13px;border-radius:6px;
+    box-shadow:0 6px 16px rgba(217,164,65,.4);letter-spacing:.04em;
+  }
+
+  /* ---------- 通用板块 ---------- */
+  .hw-section{padding:58px 0;}
+  .hw-section-alt{background:linear-gradient(180deg,#f7f4ea,#f1ede0);}
+  .hw-section-dark{background:var(--hw-green);color:#eef0e6;}
+  .hw-section-head{margin-bottom:30px;}
+  .hw-eyebrow{
+    font-size:12.5px;letter-spacing:.24em;color:#8a7b4b;text-transform:uppercase;
+    display:block;margin-bottom:8px;
+  }
+  .hw-section-dark .hw-eyebrow{color:var(--hw-amber-soft);}
+  h2.hw-h2{
+    font-size:clamp(24px,3.4vw,33px);margin:0 0 10px;letter-spacing:.03em;color:var(--hw-green);
+    line-height:1.3;
+  }
+  .hw-section-dark h2.hw-h2{color:#f6f1e3;}
+  .hw-h2-line{width:44px;height:3px;background:var(--hw-amber);border-radius:2px;margin-bottom:14px;}
+  .hw-sub{color:var(--hw-muted);font-size:14.5px;margin:0;max-width:60em;}
+  .hw-section-dark .hw-sub{color:#b9c0b4;}
+  h3.hw-h3{font-size:17.5px;margin:0 0 8px;color:var(--hw-green);line-height:1.45;}
+  .hw-section-dark h3.hw-h3{color:#f2eddf;}
+
+  /* ---------- 视频重点区 ---------- */
+  .hw-video-feature{
+    display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:start;
+  }
+  .hw-vf-card{
+    background:var(--hw-paper);border:1px solid var(--hw-line);border-radius:14px;
+    overflow:hidden;box-shadow:var(--hw-shadow);
+  }
+  .hw-vf-card figure{margin:0;position:relative;}
+  .hw-vf-card img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .hw-vf-tag{
+    position:absolute;left:12px;top:12px;background:rgba(31,42,36,.86);color:#f4efe1;
+    font-size:11.5px;padding:3px 9px;border-radius:4px;letter-spacing:.06em;
+  }
+  .hw-vf-body{padding:18px 20px 20px;}
+  .hw-vf-body h3{font-size:20px;}
+  .hw-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--hw-muted);margin-top:8px;}
+  .hw-tags{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 14px;}
+  .hw-tags span{
+    font-size:12px;background:#f1ece0;color:#6f6549;border-radius:4px;padding:2px 8px;
+  }
+  .hw-ops{display:flex;gap:8px;flex-wrap:wrap;}
+  .hw-op{
+    border:1px solid var(--hw-line);background:#fff;border-radius:999px;
+    font-size:12.5px;color:#4a5245;padding:5px 13px;transition:.16s;display:inline-flex;align-items:center;gap:5px;
+  }
+  .hw-op:hover{border-color:var(--hw-amber);background:#fdf6e6;}
+  .hw-op.is-liked{background:#fceae3;border-color:#e2a08b;color:#b4543a;}
+  .hw-op.is-saved{background:#fbf3dd;border-color:var(--hw-amber);color:#8a6a1f;}
+
+  .hw-vlist{display:flex;flex-direction:column;gap:2px;}
+  .hw-vlist-item{
+    display:grid;grid-template-columns:38px minmax(0,1fr);gap:14px;
+    padding:15px 4px;border-bottom:1px dashed var(--hw-line);
+  }
+  .hw-vlist-item:last-child{border-bottom:0;}
+  .hw-vlist-no{
+    font-size:15px;font-weight:700;color:#b0a888;font-variant-numeric:tabular-nums;padding-top:2px;
+  }
+  .hw-vlist-item h3{font-size:16px;margin-bottom:4px;}
+  .hw-vlist-item p{margin:0;font-size:13.5px;color:#5b6156;}
+  .hw-vlist-ops{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px;}
+
+  /* ---------- 关键词解析 ---------- */
+  .hw-analysis-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:40px;align-items:start;}
+  .hw-analysis p{font-size:15px;color:#414840;margin:0 0 16px;}
+  .hw-analysis-side{
+    background:var(--hw-paper);border:1px solid var(--hw-line);border-radius:12px;
+    padding:20px 22px;box-shadow:var(--hw-shadow);
+  }
+  .hw-analysis-side h3{font-size:16px;margin-bottom:12px;}
+  .hw-analysis-side ul{margin:0;padding-left:18px;font-size:13.5px;color:#5b6156;}
+  .hw-analysis-side li{margin-bottom:9px;}
+  .hw-analysis-side b{color:var(--hw-green);}
+  .hw-quote{
+    border-left:3px solid var(--hw-amber);background:#faf6ea;padding:12px 16px;
+    font-size:14px;color:#5b5540;border-radius:0 8px 8px 0;margin:0 0 18px;
+  }
+
+  /* ---------- 专题 ---------- */
+  .hw-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+  .hw-topic{
+    background:var(--hw-paper);border:1px solid var(--hw-line);border-radius:12px;
+    padding:20px;display:flex;flex-direction:column;transition:.2s;
+  }
+  .hw-topic:hover{transform:translateY(-3px);box-shadow:var(--hw-shadow);border-color:#d6c396;}
+  .hw-topic-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;}
+  .hw-status{font-size:11.5px;padding:2px 9px;border-radius:999px;letter-spacing:.04em;white-space:nowrap;}
+  .hw-status-live{background:#e7f0e4;color:#3f6a3c;}
+  .hw-status-soon{background:#f8ecda;color:#91662a;}
+  .hw-topic h3{font-size:16.5px;}
+  .hw-topic>p{font-size:13.5px;color:#5b6156;margin:0 0 14px;}
+  .hw-topic-list{margin:0;padding:0;list-style:none;border-top:1px dashed var(--hw-line);padding-top:12px;}
+  .hw-topic-list li{font-size:13px;color:#4a5245;padding:4px 0 4px 16px;position:relative;}
+  .hw-topic-list li::before{content:"";position:absolute;left:2px;top:12px;width:5px;height:5px;border-radius:50%;background:var(--hw-amber);}
+
+  /* ---------- 作者矩阵 ---------- */
+  .hw-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+  .hw-author{
+    display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;
+    background:var(--hw-paper);border:1px solid var(--hw-line);border-radius:12px;padding:20px;
+    transition:.2s;
+  }
+  .hw-author:hover{border-color:#d6c396;box-shadow:var(--hw-shadow);}
+  .hw-avatar{
+    width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+    font-size:23px;font-weight:700;color:#fff;flex-shrink:0;
+  }
+  .hw-author-name{display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
+  .hw-author-name strong{font-size:16px;color:var(--hw-green);}
+  .hw-author-field{font-size:12px;background:#f1ece0;color:#776a44;border-radius:4px;padding:1px 8px;}
+  .hw-author p{font-size:13.5px;color:#5b6156;margin:7px 0 10px;}
+  .hw-author-nums{display:flex;gap:16px;font-size:12.5px;color:var(--hw-muted);}
+  .hw-author-nums b{color:var(--hw-green);}
+
+  /* ---------- 图文索引 + 榜单 ---------- */
+  .hw-index-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:36px;align-items:start;}
+  .hw-index-item{
+    display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;align-items:center;
+    padding:16px 0;border-bottom:1px dashed var(--hw-line);
+  }
+  .hw-index-item:first-child{padding-top:0;}
+  .hw-index-item img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px;border:1px solid var(--hw-line);}
+  .hw-index-item h3{font-size:16px;margin-bottom:5px;}
+  .hw-index-item p{margin:0;font-size:13.5px;color:#5b6156;}
+  .hw-rank{background:var(--hw-green);color:#eef0e6;border-radius:12px;padding:22px;}
+  .hw-rank h3{color:#f6f1e3;font-size:16.5px;margin-bottom:4px;}
+  .hw-rank-sub{font-size:12.5px;color:#b9c0b4;margin:0 0 16px;}
+  .hw-rank-row{
+    display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:10px;align-items:center;
+    padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:13.5px;
+  }
+  .hw-rank-row:last-child{border-bottom:0;}
+  .hw-rank-row i{font-style:normal;color:var(--hw-amber-soft);font-weight:700;font-variant-numeric:tabular-nums;}
+  .hw-rank-row span{color:#dfe3d8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .hw-rank-row b{font-size:12.5px;color:var(--hw-amber-soft);font-weight:600;}
+
+  /* ---------- 评价 ---------- */
+  .hw-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+  .hw-review{
+    background:var(--hw-paper);border:1px solid var(--hw-line);border-radius:12px;padding:18px 20px;
+  }
+  .hw-review:nth-child(3n+1){border-left:3px solid var(--hw-amber);}
+  .hw-review:nth-child(3n+2){border-left:3px solid #7d9b7b;}
+  .hw-review:nth-child(3n){border-left:3px solid #b98a5e;}
+  .hw-review-head{display:flex;align-items:center;gap:10px;margin-bottom:9px;}
+  .hw-avatar-sm{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;}
+  .hw-review-head strong{font-size:14px;color:var(--hw-green);display:block;line-height:1.3;}
+  .hw-review-head small{font-size:11.5px;color:var(--hw-muted);}
+  .hw-review p{margin:0;font-size:13.5px;color:#4a5245;}
+
+  /* ---------- FAQ + 动态 ---------- */
+  .hw-faq-dyn{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;align-items:start;}
+  .hw-faq details{
+    background:var(--hw-paper);border:1px solid var(--hw-line);border-radius:10px;
+    margin-bottom:10px;overflow:hidden;
+  }
+  .hw-faq summary{
+    list-style:none;cursor:pointer;padding:13px 18px;font-size:14.5px;font-weight:600;
+    color:var(--hw-green);position:relative;padding-right:40px;
+  }
+  .hw-faq summary::-webkit-details-marker{display:none;}
+  .hw-faq summary::after{
+    content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+    color:var(--hw-amber);font-size:18px;font-weight:400;line-height:1;
+  }
+  .hw-faq details[open] summary::after{content:"−";}
+  .hw-faq details[open] summary{background:#faf6ea;}
+  .hw-faq p{margin:0;padding:0 18px 15px;font-size:13.5px;color:#5b6156;}
+
+  .hw-dyn-item{
+    display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;
+    padding:13px 0;border-bottom:1px dashed var(--hw-line);
+  }
+  .hw-dyn-item:last-child{border-bottom:0;}
+  .hw-dyn-date{
+    font-size:12.5px;color:#8a7b4b;background:#f1ece0;border-radius:4px;padding:2px 8px;
+    text-align:center;align-self:start;white-space:nowrap;
+  }
+  .hw-dyn-item h3{font-size:14.5px;margin-bottom:3px;}
+  .hw-dyn-item p{margin:0;font-size:13px;color:#5b6156;}
+
+  /* ---------- 投稿/联系 ---------- */
+  .hw-cta-panel{
+    background:linear-gradient(120deg,#1f2a24,#2c3b31);
+    border-radius:16px;padding:36px 34px;display:grid;
+    grid-template-columns:minmax(0,1fr) auto;gap:26px;align-items:center;
+    color:#eef0e6;box-shadow:0 16px 40px rgba(31,42,36,.24);position:relative;overflow:hidden;
+  }
+  .hw-cta-panel::after{
+    content:"";position:absolute;right:-70px;bottom:-110px;width:280px;height:280px;
+    border:26px solid rgba(217,164,65,.16);border-radius:50%;
+  }
+  .hw-cta-panel h2{color:#f6f1e3;position:relative;z-index:2;}
+  .hw-cta-panel p{font-size:14px;color:#c6ccbf;margin:0;max-width:42em;position:relative;z-index:2;}
+  .hw-cta-actions{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:2;}
+  .hw-btn-amber{background:var(--hw-amber);color:#1f2a24;}
+  .hw-btn-amber:hover{background:var(--hw-amber-soft);transform:translateY(-1px);}
+  .hw-btn-line{background:transparent;border:1px solid rgba(246,241,227,.42);color:#f6f1e3;}
+  .hw-btn-line:hover{background:rgba(246,241,227,.12);}
+
+  /* ---------- 页脚 ---------- */
+  .hw-footer{background:#16201a;color:#a9b1a4;padding:48px 0 26px;font-size:13.5px;}
+  .hw-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:30px;}
+  .hw-footer h4{font-size:14px;color:#f0ecdf;margin:0 0 12px;letter-spacing:.05em;}
+  .hw-footer ul{list-style:none;margin:0;padding:0;}
+  .hw-footer li{margin-bottom:8px;}
+  .hw-footer a{transition:.16s;}
+  .hw-footer a:hover{color:var(--hw-amber-soft);}
+  .hw-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .hw-footer-brand .hw-logo-mark{width:36px;height:36px;border-radius:8px;}
+  .hw-footer-brand strong{color:#f0ecdf;font-size:16px;letter-spacing:.05em;}
+  .hw-footer p{margin:0 0 10px;line-height:1.8;}
+  .hw-footer-bottom{
+    border-top:1px solid rgba(255,255,255,.10);margin-top:34px;padding-top:18px;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7f887b;
+  }
+  .hw-footer-bottom a:hover{color:var(--hw-amber-soft);}
+
+  /* ---------- Toast / Modal ---------- */
+  .hw-toast{
+    position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+    background:rgba(31,42,36,.94);color:#f6f1e3;font-size:13.5px;padding:10px 20px;
+    border-radius:8px;box-shadow:0 12px 30px rgba(0,0,0,.24);opacity:0;pointer-events:none;
+    transition:.24s;z-index:120;border:1px solid rgba(217,164,65,.4);
+  }
+  .hw-toast.is-show{opacity:1;transform:translate(-50%,0);}
+  .hw-modal{
+    position:fixed;inset:0;background:rgba(20,26,21,.55);display:none;
+    align-items:center;justify-content:center;padding:22px;z-index:110;backdrop-filter:blur(3px);
+  }
+  .hw-modal.is-open{display:flex;}
+  .hw-modal-box{
+    background:var(--hw-paper);border-radius:14px;width:min(520px,100%);
+    box-shadow:0 24px 60px rgba(0,0,0,.3);padding:26px 26px 22px;position:relative;
+    max-height:86vh;overflow:auto;
+  }
+  .hw-modal-box h3{margin:0 0 6px;font-size:19px;}
+  .hw-modal-box .hw-modal-sub{font-size:13px;color:var(--hw-muted);margin:0 0 18px;}
+  .hw-modal-close{
+    position:absolute;right:14px;top:12px;border:0;background:transparent;font-size:20px;color:#8a8a80;
+  }
+  .hw-field{margin-bottom:12px;}
+  .hw-field label{display:block;font-size:13px;color:#4a5245;margin-bottom:4px;}
+  .hw-field input,.hw-field textarea{
+    width:100%;border:1px solid var(--hw-line);border-radius:8px;padding:9px 11px;
+    font-size:14px;font-family:inherit;background:#fff;color:var(--hw-ink);outline:0;
+  }
+  .hw-field input:focus,.hw-field textarea:focus{border-color:var(--hw-amber);box-shadow:0 0 0 3px rgba(217,164,65,.16);}
+  .hw-field textarea{resize:vertical;min-height:88px;}
+  .hw-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px;}
+
+  .hw-to-top{
+    position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+    background:var(--hw-green);color:#f6f1e3;border:0;font-size:17px;
+    box-shadow:0 8px 22px rgba(31,42,36,.30);opacity:0;pointer-events:none;transition:.22s;z-index:90;
+  }
+  .hw-to-top.is-show{opacity:1;pointer-events:auto;}
+  .hw-to-top:hover{background:var(--hw-amber);color:#1f2a24;}
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:1024px){
+    .hw-hero-grid{grid-template-columns:1fr;gap:34px;}
+    .hw-video-feature{grid-template-columns:1fr;}
+    .hw-analysis-grid{grid-template-columns:1fr;}
+    .hw-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .hw-index-wrap{grid-template-columns:1fr;}
+    .hw-faq-dyn{grid-template-columns:1fr;}
+    .hw-footer-grid{grid-template-columns:1fr 1fr;}
+    .hw-cta-panel{grid-template-columns:1fr;}
+  }
+  @media (max-width:860px){
+    .hw-nav{display:none;width:100%;order:5;margin:10px 0 0;flex-direction:column;align-items:stretch;gap:2px;}
+    .hw-nav.is-open{display:flex;}
+    .hw-nav a{padding:10px 12px;background:#faf7ee;}
+    .hw-nav-toggle{display:block;}
+    .hw-header-inner{flex-wrap:wrap;gap:12px;}
+    .hw-search{order:4;width:100%;margin-left:0;}
+    .hw-search input{flex:1;width:auto;}
+  }
+  @media (max-width:760px){
+    .hw-hero{padding:36px 0 44px;}
+    .hw-hero-stats{grid-template-columns:1fr 1fr;gap:16px;}
+    .hw-author-grid{grid-template-columns:1fr;}
+    .hw-topic-grid{grid-template-columns:1fr;}
+    .hw-review-grid{grid-template-columns:1fr;}
+    .hw-index-item{grid-template-columns:110px minmax(0,1fr);gap:14px;}
+    .hw-footer-grid{grid-template-columns:1fr;}
+    .hw-vlist-item{grid-template-columns:28px minmax(0,1fr);gap:11px;}
+    .hw-cta-panel{padding:26px 20px;}
+    .hw-announce-time{margin-left:0;}
+    .hw-dyn-item{grid-template-columns:70px minmax(0,1fr);}
+  }
+  @media (max-width:480px){
+    .hw-hero-actions .hw-btn{flex:1;justify-content:center;}
+    .hw-index-item{grid-template-columns:1fr;}
+    .hw-index-item img{aspect-ratio:16/8;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头 -->
+<div class="hw-topbar">
+  <div class="hw-announce" role="region" aria-label="站点公告">
+    <div class="hw-wrap">
+      <span class="hw-announce-tag">最新发布</span>
+      <span class="hw-announce-text">「黄仓库 · 第三期旧物改造成片合集」上线 24 小时，新增 12 条高清短纪录与 4 份可下载分镜表。</span>
+      <span class="hw-announce-time">2026-11-20 更新</span>
+    </div>
+  </div>
+  <header class="hw-header">
+    <div class="hw-wrap hw-header-inner">
+      <a class="hw-logo" href="#hw-top" aria-label="黄仓库官网首页">
+        <span class="hw-logo-mark" aria-hidden="true"><span></span></span>
+        <span class="hw-logo-text">
+          <strong>黄仓库</strong>
+          <small>HUANG CANG KU</small>
+        </span>
+      </a>
+      <button class="hw-nav-toggle" id="hwNavToggle" aria-expanded="false" aria-controls="hwMainNav">☰</button>
+      <nav class="hw-nav" id="hwMainNav" aria-label="主导航">
+        <a href="#hw-hero">首页</a>
+        <a href="#hw-analysis">品牌解析</a>
+        <a href="#hw-videos">精选影像</a>
+        <a href="#hw-topics">专题企划</a>
+        <a href="#hw-authors">创作者</a>
+        <a href="#hw-index">图文索引</a>
+        <a href="#hw-reviews">口碑</a>
+        <a href="#hw-faq">帮助</a>
+        <a href="#hw-join">投稿</a>
+      </nav>
+      <div class="hw-search" role="search">
+        <label class="hw-sr" for="hwSearchInput">搜索站内内容</label>
+        <input id="hwSearchInput" type="search" placeholder="搜索影像 / 创作者 / 专题" autocomplete="off">
+        <button type="button" id="hwSearchBtn">搜索</button>
+      </div>
+    </div>
+    <div class="hw-search-feedback" id="hwSearchFeedback" aria-live="polite">
+      <div class="hw-wrap">
+        <span id="hwSearchMsg">试试这些关键词：</span>
+        <button class="hw-chip" type="button">旧物改造</button>
+        <button class="hw-chip" type="button">仓库灯光</button>
+        <button class="hw-chip" type="button">分镜教程</button>
+        <button class="hw-chip" type="button">在地文化</button>
+        <button class="hw-chip" type="button">无对白影像</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="hw-top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="hw-hero" id="hw-hero">
+    <div class="hw-wrap hw-hero-grid">
+      <div>
+        <span class="hw-hero-kicker"><i></i>官方网站 · 原创 · 高清</span>
+        <h1 class="hw-hero-title">黄仓库</h1>
+        <p class="hw-hero-lead">把旧物、旧厂房与旧手艺，拍成值得反复观看的影像。黄仓库是一个以仓储美学为核心的企业级视频品牌，让每一次翻找都成为一次内容发布。</p>
+        <p class="hw-hero-intro">黄仓库官方网站面向创作者与品牌机构，持续运营一个专注旧物新生、在地手艺与仓库空间的原创视频社区，覆盖短纪录、教程、访谈与深度测评等精品内容，以专业制作与正版素材构筑值得信赖的内容生态。</p>
+        <div class="hw-hero-actions">
+          <a class="hw-btn hw-btn-primary" href="#hw-videos">观看精选影像</a>
+          <a class="hw-btn hw-btn-ghost" href="#hw-authors">认识创作者</a>
+          <a class="hw-btn hw-btn-ghost" href="#hw-join">成为投稿人</a>
+        </div>
+        <div class="hw-hero-stats">
+          <div class="hw-hero-stat"><b>1,286</b><span>部原创高清作品</span></div>
+          <div class="hw-hero-stat"><b>312</b><span>位签约创作者</span></div>
+          <div class="hw-hero-stat"><b>9 年</b><span>持续运营内容生态</span></div>
+        </div>
+      </div>
+      <div class="hw-hero-visual">
+        <span class="hw-hero-badge">本周主推企划</span>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b3a30'/%3E%3Cstop offset='1' stop-color='%23161f1a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23g1)'/%3E%3Crect x='70' y='120' width='660' height='330' fill='%23242f27' stroke='%23d9a441' stroke-width='2'/%3E%3Crect x='100' y='150' width='180' height='270' fill='%23c58f38' opacity='.85'/%3E%3Crect x='300' y='150' width='120' height='130' fill='%23e8d6a8' opacity='.7'/%3E%3Crect x='440' y='150' width='120' height='130' fill='%23a8743a' opacity='.8'/%3E%3Crect x='300' y='300' width='260' height='120' fill='%235b6b58' opacity='.75'/%3E%3Crect x='580' y='150' width='120' height='270' fill='%23f0c674' opacity='.35'/%3E%3Ccircle cx='640' cy='110' r='34' fill='%23d9a441'/%3E%3Cpath d='M70 120h660' stroke='%23d9a441' stroke-width='3'/%3E%3C/svg%3E" alt="黄仓库主视觉：暖黄灯光下摆放旧木箱与金属货架的老厂房仓库空间" width="800" height="550">
+          <figcaption class="hw-hero-caption">
+            <span class="hw-play-dot">▶</span>
+            <span>《仓库的一天》第一集：清晨六点，第一批旧木箱入库</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 主内容入口：精选影像 -->
+  <section class="hw-section" id="hw-videos">
+    <div class="hw-wrap">
+      <div class="hw-section-head">
+        <span class="hw-eyebrow">Featured Videos</span>
+        <h2 class="hw-h2">黄仓库精选影像：本周值得一看的 6 条片</h2>
+        <div class="hw-h2-line"></div>
+        <p class="hw-sub">由黄仓库编辑部与签约创作者共同推荐，覆盖旧物改造、仓库摄影、手艺访谈与在地文化，全部为官方发布的正版高清片源，支持收藏与下载分镜资料。</p>
+      </div>
+
+      <div class="hw-video-feature">
+        <article class="hw-vf-card">
+          <figure>
+            <span class="hw-vf-tag">重点推荐 · 短纪录</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 405'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23303a2f'/%3E%3Cstop offset='1' stop-color='%231e2b23'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='405' fill='url(%23g2)'/%3E%3Crect x='60' y='60' width='600' height='285' fill='none' stroke='%23e8cf94' stroke-width='1.5' opacity='.6'/%3E%3Crect x='105' y='95' width='150' height='215' fill='%23d9a441' opacity='.75'/%3E%3Crect x='280' y='95' width='90' height='215' fill='%23e8d6a8' opacity='.55'/%3E%3Crect x='395' y='95' width='110' height='110' fill='%23a8743a' opacity='.7'/%3E%3Crect x='395' y='225' width='110' height='85' fill='%235b6b58' opacity='.8'/%3E%3Crect x='530' y='95' width='90' height='215' fill='%23f0c674' opacity='.4'/%3E%3Cpath d='M60 345h600' stroke='%23d9a441' stroke-width='2' opacity='.7'/%3E%3C/svg%3E" alt="短片《旧木箱的第二次生命》封面：暖黄光带斜照货架上的旧木箱" width="720" height="405">
+          </figure>
+          <div class="hw-vf-body">
+            <h3>旧木箱的第二次生命：从仓库角落到客厅家具</h3>
+            <p style="margin:0;font-size:14px;color:#5b6156;">我们跟着木作师傅老周，用三天时间把一只开裂的旧木箱拆解、补缝、重新上蜡，最后变成一张可收纳的边几。全片保留现场收音，包含两套可复用的修复方案。</p>
+            <div class="hw-tags"><span>旧物改造</span><span>手作DIY</span><span>创作幕后</span></div>
+            <div class="hw-meta">
+              <span>作者：老周的木头</span><span>播放 18.6 万</span><span>点赞 1.2 万</span><span>收藏 4,318</span>
+            </div>
+            <div class="hw-ops" style="margin-top:14px;">
+              <button class="hw-op" type="button" data-hw-like>♡ 点赞 <b>1.2万</b></button>
+              <button class="hw-op" type="button" data-hw-save>☆ 收藏</button>
+              <button class="hw-op" type="button" data-hw-copy>复制链接</button>
+              <button class="hw-op" type="button" data-hw-modal="hwModalReport">反馈</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="hw-vlist">
+          <article class="hw-vlist-item">
+            <span class="hw-vlist-no">02</span>
+            <div>
+              <h3>仓库灯光实验：三盏台灯如何拍出电影感</h3>
+              <p>用最小成本还原质感布光，含点位图与色温对照表，适合刚入门的产品影像创作者。</p>
+              <div class="hw-tags"><span>教程干货</span><span>实用技巧</span></div>
+              <div class="hw-meta"><span>作者：林照野</span><span>播放 9.4 万</span><span>点赞 6,720</span></div>
+              <div class="hw-vlist-ops">
+                <button class="hw-op" type="button" data-hw-like>♡ 点赞 <b>6720</b></button>
+                <button class="hw-op" type="button" data-hw-save>☆ 收藏</button>
+                <button class="hw-op" type="button" data-hw-copy>复制链接</button>
+              </div>
+            </div>
+          </article>
+          <article class="hw-vlist-item">
+            <span class="hw-vlist-no">03</span>
+            <div>
+              <h3>旧布头再生：三种零浪费剪裁法</h3>
+              <p>裁缝阿禾在仓库里翻出二十年前的布头，用三种剪法做出围裙、收纳袋与杯垫，附尺寸表。</p>
+              <div class="hw-tags"><span>手作DIY</span><span>生活方式</span></div>
+              <div class="hw-meta"><span>作者：阿禾裁缝铺</span><span>播放 7.8 万</span><span>点赞 5,106</span></div>
+              <div class="hw-vlist-ops">
+                <button class="hw-op" type="button" data-hw-like>♡ 点赞 <b>5106</b></button>
+                <button class="hw-op" type="button" data-hw-save>☆ 收藏</button>
+                <button class="hw-op" type="button" data-hw-copy>复制链接</button>
+              </div>
+            </div>
+          </article>
+          <article class="hw-vlist-item">
+            <span class="hw-vlist-no">04</span>
+            <div>
+              <h3>访谈：一座老仓库如何变成拍摄地</h3>
+              <p>对话空间主理人陈叙，聊采光改造、消防合规与影片拍摄许可，附一份可参考的场地清单。</p>
+              <div class="hw-tags"><span>人物访谈</span><span>品牌故事</span></div>
+              <div class="hw-meta"><span>作者：黄仓库编辑部</span><span>播放 6.1 万</span><span>点赞 4,033</span></div>
+              <div class="hw-vlist-ops">
+                <button class="hw-op" type="button" data-hw-like>♡ 点赞 <b>4033</b></button>
+                <button class="hw-op" type="button" data-hw-save>☆ 收藏</button>
+                <button class="hw-op" type="button" data-hw-copy>复制链接</button>
+              </div>
+            </div>
+          </article>
+          <article class="hw-vlist-item">
+            <span class="hw-vlist-no">05</span>
+            <div>
+              <h3>无对白影像：午后的灰尘落在光里</h3>
+              <p>四分钟长镜头，记录仓库午后的光尘变化，可作为剪辑练习的免费素材片段下载。</p>
+              <div class="hw-tags"><span>治愈影像</span><span>艺术美学</span></div>
+              <div class="hw-meta"><span>作者：沈迟</span><span>播放 5.5 万</span><span>点赞 3,860</span></div>
+              <div class="hw-vlist-ops">
+                <button class="hw-op" type="button" data-hw-like>♡ 点赞 <b>3860</b></button>
+                <button class="hw-op" type="button" data-hw-save>☆ 收藏</button>
+                <button class="hw-op" type="button" data-hw-copy>复制链接</button>
+              </div>
+            </div>
+          </article>
+          <article class="hw-vlist-item">
+            <span class="hw-vlist-no">06</span>
+            <div>
+              <h3>搬迁记：一条街的旧货商如何告别</h3>
+              <p>跟拍三户旧货商户的搬迁过程，记录他们在最后一晚清点货架时的对话，属于在地文化系列。</p>
+              <div class="hw-tags"><span>城市探索</span><span>在地文化</span></div>
+              <div class="hw-meta"><span>作者：街角摄影组</span><span>播放 4.9 万</span><span>点赞 3,204</span></div>
+              <div class="hw-vlist-ops">
+                <button class="hw-op" type="button" data-hw-like>♡ 点赞 <b>3204</b></button>
+                <button class="hw-op" type="button" data-hw-save>☆ 收藏</button>
+                <button class="hw-op" type="button" data-hw-copy>复制链接</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3.5 关键词解析（品牌故事 / 深度解析） -->
+  <section class="hw-section hw-section-alt" id="hw-analysis">
+    <div class="hw-wrap">
+      <div class="hw-section-head">
+        <span class="hw-eyebrow">Brand Insight</span>
+        <h2 class="hw-h2">黄仓库是什么：一个把仓库拍成内容的视频品牌</h2>
+        <div class="hw-h2-line"></div>
+        <p class="hw-sub">关于黄仓库的品牌定位、内容生态与运营方式，官方在这里给出完整说明，也写给第一次来到这里的人。</p>
+      </div>
+
+      <div class="hw-analysis-grid">
+        <div class="hw-analysis">
+          <h3 class="hw-h3">一、从一间旧仓房开始：黄仓库的由来</h3>
+          <p>黄仓库最初并不是一家视频公司，而是一间真的仓库。九年前，创始团队租下一处老粮站的仓房，用来存放从旧货市场收来的木箱、铁架、玻璃瓶和旧工具。为了给这些物件建立档案，他们开始用相机逐件拍摄，记录来源、年份、磨损位置和修复建议。这些素材被整理成短片，发到网上之后，收到最多的留言并不是询价，而是「你们能讲讲这个箱子是怎么修的吗」。于是黄仓库开始把镜头从物件本身，转向物件背后的人与手艺，逐渐形成今天的内容方向：以仓储空间为底色，以旧物新生为线索，以真实人物为核心。</p>
+          <p>如今的黄仓库官方网站，是一个完整运营的视频品牌阵地。它有固定的更新节奏、稳定的创作者队伍、可下载的短视频素材库与分镜资料库，也有面向企业与合作机构的品牌影像服务。我们坚持原创与正版，所有片源标注拍摄时间、拍摄地与出镜人授权信息，避免出现来路不明的搬运内容。这种略显笨拙的做法，让黄仓库在旧物改造与手艺记录这个垂直领域里，积累了相对扎实的口碑。</p>
+
+          <h3 class="hw-h3">二、内容生态：创作者、素材、社区三者如何互相支撑</h3>
+          <p>黄仓库的内容生态由三部分构成。第一是创作者，目前签约与合作的创作者超过三百位，包括木作师傅、裁缝、摄影师、独立导演、城市记录者与在地文化研究者。我们不要求他们统一风格，只要求拍摄过程可追溯、信息来源可核实。第二是素材与工具，官方每月发布一批可下载的仓库实景片段、环境音与分镜表，供社区创作者练习剪辑与二次创作，降低入门门槛。第三是社区互动，每部片下面都能看到具体的讨论，比如某处补漆是否必要、某个机位是否更合适，这些讨论往往会被创作者采纳，写进下一期的内容里。</p>
+          <p>这种结构让黄仓库更像一个持续运转的工作现场，而不是单纯的播放列表。企业动态、比赛报名、攻略与挑战等模块，也都围绕这条主线展开：我们会在每个季度举办一次「旧物新生挑战」，邀请社区用官方素材完成三分钟短片，优秀作品会在官网首页获得推荐位，并获得高清素材包的下载权限。对很多第一次投稿的创作者来说，这是他们第一次感受到自己的作品被认真对待。</p>
+
+          <h3 class="hw-h3">三、我们如何界定品质：拍摄、核实与呈现的标准</h3>
+          <p>黄仓库对「品质」的理解比较具体。拍摄上，主线内容要求至少双机位或可用的稳定长镜头，环境音优先于配乐，避免用强节奏掩盖现场细节。核实上，涉及年份、工艺与地域信息的表述，需要至少两个独立来源，出镜人的身份与授权须留档。呈现上，片头标注拍摄地与时间，片尾给出素材清单与可参考的延伸阅读，方便观众自行查证。对于企业合作内容，我们会明确区分「品牌委托」与「编辑部自制」，让观众知道自己在看什么。</p>
+          <p>这套标准并不轻松，但它带来了实际的回报：黄仓库的评论区里，少见情绪化的争吵，更多是具体的经验补充。有木工在评论里指出某个榫卯结构的做法更省料，有摄影爱好者补充了更适合仓库暗光的镜头参数，也有地方志工作者提供了一条旧仓库的历史线索。这些反馈被整理进内容更新日志，成为品牌故事的一部分。我们相信，真正的影响力不来自声量，而来自内容的可复用性与可验证性。</p>
+
+          <h3 class="hw-h3">四、面向未来：从记录旧物，到记录一种工作方式</h3>
+          <p>从 2026 年开始，黄仓库把内容方向扩展为三条线：第一条是旧物与手艺，继续拍修复、改造与访谈；第二条是空间与城市，记录仓库、厂房、旧市场在城市更新中的去向；第三条是创作方法与工具，包括布光、收音、分镜与后期流程。三条线共同构成黄仓库对「仓储美学」的理解：它不仅是一种视觉风格，也是一种整理世界的方式——把零散的东西归位，把被忽略的细节讲清楚，把一次翻找变成一次有结果的发布。</p>
+          <p>作为黄仓库官方网站，我们会继续以官方发布的形式更新企业动态、比赛报名与工具下载，也欢迎更多创作者加入。无论你是习惯用手机随手记录的普通人，还是已经有成熟团队的影像工作者，只要你的内容真实、具体、愿意接受讨论，这里就有你的位置。我们不做流量的追逐者，更愿意做那个把灯留到最后的人。</p>
+
+          <blockquote class="hw-quote">「一件旧物被讲清楚的时候，它就不再只是旧物，而是一段时间的说明书。」——黄仓库品牌手册，2026 年版</blockquote>
+        </div>
+
+        <aside class="hw-analysis-side">
+          <h3>品牌关键信息</h3>
+          <ul>
+            <li><b>品牌名称：</b>黄仓库</li>
+            <li><b>定位：</b>仓储美学原创视频品牌</li>
+            <li><b>内容方向：</b>旧物改造、手艺访谈、城市空间、创作方法</li>
+            <li><b>更新节奏：</b>每周三、周六官方发布</li>
+            <li><b>社区规模：</b>312 位签约创作者，1,286 部原创作品</li>
+            <li><b>合作方式：</b>品牌影像、场地支持、素材授权</li>
+            <li><b>价值观：</b>真实、耐心、可核实、可复用</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="hw-section" id="hw-topics">
+    <div class="hw-wrap">
+      <div class="hw-section-head">
+        <span class="hw-eyebrow">Editorial Projects</span>
+        <h2 class="hw-h2">专题企划：黄仓库正在进行的四组长期内容</h2>
+        <div class="hw-h2-line"></div>
+        <p class="hw-sub">专题由编辑部策划、创作者共同完成，更新状态定期同步。每个专题都提供内容清单，方便你按顺序观看或直接跳读。</p>
+      </div>
+
+      <div class="hw-topic-grid">
+        <article class="hw-topic">
+          <div class="hw-topic-top">
+            <h3 class="hw-h3" style="margin:0;">旧物新生计划</h3>
+            <span class="hw-status hw-status-live">更新中</span>
+          </div>
+          <p>每期挑选一件仓库里的旧物，记录从评估、修复到重新使用的全过程，附材料清单与工具建议。</p>
+          <ul class="hw-topic-list">
+            <li>第 8 期：铁皮工具柜的除锈与改色</li>
+            <li>第 9 期：旧藤椅换编，保留原漆面</li>
+            <li>第 10 期：木托盘改造成墙面书架</li>
+          </ul>
+        </article>
+
+        <article class="hw-topic">
+          <div class="hw-topic-top">
+            <h3 class="hw-h3" style="margin:0;">仓库里的手艺访谈</h3>
+            <span class="hw-status hw-status-live">更新中</span>
+          </div>
+          <p>走进手艺人真正工作的空间，聊工具、聊成本、聊接不到的订单，也聊他们怎么判断一件东西值得修。</p>
+          <ul class="hw-topic-list">
+            <li>访谈：修钟表的人和他三十年的零件盒</li>
+            <li>访谈：一位裁缝对旧衣改短的坚持</li>
+            <li>访谈：旧书修复师的台面整理法</li>
+          </ul>
+        </article>
+
+        <article class="hw-topic">
+          <div class="hw-topic-top">
+            <h3 class="hw-h3" style="margin:0;">城市空间记录</h3>
+            <span class="hw-status hw-status-soon">筹备中</span>
+          </div>
+          <p>记录老厂房、旧市场与仓储空间在城市更新中的变化，保留搬迁前后的影像对照与声音样本。</p>
+          <ul class="hw-topic-list">
+            <li>待发布：老粮站改造前的最后一次巡场</li>
+            <li>待发布：旧货市场的最后一场清晨</li>
+            <li>待发布：仓库区的照明改造观察笔记</li>
+          </ul>
+        </article>
+
+        <article class="hw-topic">
+          <div class="hw-topic-top">
+            <h3 class="hw-h3" style="margin:0;">三分钟短片挑战</h3>
+            <span class="hw-status hw-status-live">报名中</span>
+          </div>
+          <p>面向社区的季度挑战，使用官方素材库完成三分钟短片，评审维度为叙事清晰度与现场感。</p>
+          <ul class="hw-topic-list">
+            <li>第四季主题：一件物品的十年</li>
+            <li>提交截止：2026 年 12 月 18 日</li>
+            <li>奖励：首页推荐位与高清素材包下载权限</li>
+          </ul>
+        </article>
+
+        <article class="hw-topic">
+          <div class="hw-topic-top">
+            <h3 class="hw-h3" style="margin:0;">拍摄方法与工具</h3>
+            <span class="hw-status hw-status-live">持续更新</span>
+          </div>
+          <p>把黄仓库几年积累的拍摄经验拆成可执行的步骤，从布光到收音，从分镜到后期，全部公开。</p>
+          <ul class="hw-topic-list">
+            <li>仓库暗光环境的三种低成本布光方案</li>
+            <li>现场收音：如何避开金属货架的回声</li>
+            <li>分镜模板下载与填写示范</li>
+          </ul>
+        </article>
+
+        <article class="hw-topic">
+          <div class="hw-topic-top">
+            <h3 class="hw-h3" style="margin:0;">在地文化档案</h3>
+            <span class="hw-status hw-status-soon">筹备中</span>
+          </div>
+          <p>与地方志工作者合作，整理仓库所在街区的历史碎片，用短片与图文索引交叉呈现。</p>
+          <ul class="hw-topic-list">
+            <li>待发布：街区旧仓库名录与位置图</li>
+            <li>待发布：老工人的口述片段整理</li>
+            <li>待发布：旧货交易术语的小词典</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="hw-section hw-section-alt" id="hw-authors">
+    <div class="hw-wrap">
+      <div class="hw-section-head">
+        <span class="hw-eyebrow">Creators</span>
+        <h2 class="hw-h2">黄仓库创作者矩阵：六位长期合作的片场常客</h2>
+        <div class="hw-h2-line"></div>
+        <p class="hw-sub">他们各自带着不同的手艺与视角进入黄仓库，构成这个社区最稳定的内容供给。点击名字可查看简介与联系方式。</p>
+      </div>
+
+      <div class="hw-author-grid">
+        <article class="hw-author">
+          <div class="hw-avatar" style="background:#c58f38;" aria-hidden="true">周</div>
+          <div>
+            <div class="hw-author-name">
+              <strong>老周的木头</strong><span class="hw-author-field">木作修复</span>
+            </div>
+            <p>做木工已有二十七年，擅长旧家具的结构评估与最小干预修复。他的片子很少配乐，几乎全部保留凿子和刨子的现场声，坚持每条视频标注木材种类与含水率，被社区称为「最不爱说话但信息量最大」的创作者。</p>
+            <div class="hw-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>12.4 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="hw-author">
+          <div class="hw-avatar" style="background:#5b6b58;" aria-hidden="true">林</div>
+          <div>
+            <div class="hw-author-name">
+              <strong>林照野</strong><span class="hw-author-field">布光与摄影</span>
+            </div>
+            <p>商业摄影师出身，擅长在极小预算里做出稳定画质。加入黄仓库后，他把仓库当成天然摄影棚，反复测试暗光环境下的布光组合，并把这些方案整理成可下载的点位图，帮助很多初学者完成了第一条像样的短片。</p>
+            <div class="hw-author-nums"><span>作品 <b>64</b></span><span>粉丝 <b>9.7 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="hw-author">
+          <div class="hw-avatar" style="background:#a8743a;" aria-hidden="true">禾</div>
+          <div>
+            <div class="hw-author-name">
+              <strong>阿禾裁缝铺</strong><span class="hw-author-field">旧衣改造</span>
+            </div>
+            <p>在老街开了十几年的裁缝铺，最擅长把旧衣拆成布头再重新组合。她的视频节奏慢，但每个步骤都交代得清楚，尺寸表与纸样会同步上传到官网，很多观众跟着她的教程做出了第一件自己改的衣服。</p>
+            <div class="hw-author-nums"><span>作品 <b>58</b></span><span>粉丝 <b>8.3 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="hw-author">
+          <div class="hw-avatar" style="background:#bc7a5e;" aria-hidden="true">沈</div>
+          <div>
+            <div class="hw-author-name">
+              <strong>沈迟</strong><span class="hw-author-field">无对白影像</span>
+            </div>
+            <p>独立导演，偏爱长镜头与环境声。她在黄仓库拍摄的一组无对白短片，记录光线在货架间的移动，被不少剪辑学习者当作练习素材。她坚持不做配乐版本，认为安静本身就是内容的一部分。</p>
+            <div class="hw-author-nums"><span>作品 <b>41</b></span><span>粉丝 <b>6.9 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="hw-author">
+          <div class="hw-avatar" style="background:#7d9b7b;" aria-hidden="true">街</div>
+          <div>
+            <div class="hw-author-name">
+              <strong>街角摄影组</strong><span class="hw-author-field">城市记录</span>
+            </div>
+            <p>一个三人的小型记录团队，长期跟拍旧货市场与老街区的日常。他们的片子信息密度高，常常附上地图与商户名单，被社区居民当作生活档案使用。团队坚持所有出镜者签署授权，并保留原始素材的长期存档。</p>
+            <div class="hw-author-nums"><span>作品 <b>73</b></span><span>粉丝 <b>11.1 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="hw-author">
+          <div class="hw-avatar" style="background:#8a7148;" aria-hidden="true">陈</div>
+          <div>
+            <div class="hw-author-name">
+              <strong>陈叙</strong><span class="hw-author-field">空间与访谈</span>
+            </div>
+            <p>空间主理人，参与过多个老厂房的改造与拍摄场地合规工作。他在黄仓库的访谈片里很少谈情怀，更多谈采光、承重与消防通道，这些务实的内容反而成为许多小型制作团队寻找场地时的参考。</p>
+            <div class="hw-author-nums"><span>作品 <b>37</b></span><span>粉丝 <b>5.6 万</b></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 图文索引 + 数据榜单 -->
+  <section class="hw-section" id="hw-index">
+    <div class="hw-wrap">
+      <div class="hw-section-head">
+        <span class="hw-eyebrow">Index & Ranking</span>
+        <h2 class="hw-h2">图文索引与热度榜：黄仓库本周内容一览</h2>
+        <div class="hw-h2-line"></div>
+        <p class="hw-sub">图文索引适合快速浏览，热度榜按近七日播放与收藏综合计算，数据每日更新，可作为选题与观看顺序的参考。</p>
+      </div>
+
+      <div class="hw-index-wrap">
+        <div>
+          <article class="hw-index-item">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23e9dfc6'/%3E%3Crect x='40' y='60' width='110' height='180' fill='%23c58f38'/%3E%3Crect x='170' y='60' width='90' height='180' fill='%235b6b58'/%3E%3Crect x='280' y='60' width='150' height='85' fill='%23a8743a'/%3E%3Crect x='280' y='160' width='150' height='80' fill='%23f0c674'/%3E%3C/svg%3E" alt="图文索引封面：仓库货架上并列摆放的旧木箱与布料包裹" width="480" height="300">
+            <div>
+              <h3>图文实录：一次仓库清点是怎么做的</h3>
+              <p>从编号规则、拍照角度到湿度记录，编辑部把清点流程写成可复制的步骤，附检查表下载。</p>
+              <div class="hw-meta"><span>图文 · 阅读 8 分钟</span><span>2026-11-18</span></div>
+            </div>
+          </article>
+          <article class="hw-index-item">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23242f27'/%3E%3Ccircle cx='140' cy='120' r='62' fill='%23d9a441' opacity='.85'/%3E%3Crect x='240' y='70' width='180' height='40' fill='%23e8d6a8'/%3E%3Crect x='240' y='130' width='140' height='40' fill='%23c58f38'/%3E%3Crect x='240' y='190' width='180' height='40' fill='%235b6b58'/%3E%3C/svg%3E" alt="图文索引封面：暗色背景中一盏暖光灯泡与三行文字条目" width="480" height="300">
+            <div>
+              <h3>布光速查：仓库里三种常见光位对照</h3>
+              <p>侧逆光、顶光加反光板、单灯扫墙三种方案的实拍效果与参数，一页看完，适合收藏。</p>
+              <div class="hw-meta"><span>图文 · 阅读 6 分钟</span><span>2026-11-15</span></div>
+            </div>
+          </article>
+          <article class="hw-index-item">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23f1ece0'/%3E%3Cpath d='M0 220h480v80H0z' fill='%23c58f38' opacity='.5'/%3E%3Crect x='60' y='70' width='70' height='150' fill='%235b6b58'/%3E%3Crect x='150' y='100' width='70' height='120' fill='%23a8743a'/%3E%3Crect x='240' y='60' width='70' height='160' fill='%23d9a441'/%3E%3Crect x='330' y='90' width='90' height='130' fill='%23bc7a5e'/%3E%3C/svg%3E" alt="图文索引封面：旧货市场摊位上的四组不同材质物件" width="480" height="300">
+            <div>
+              <h3>术语小词典：旧货市场里的十个行话</h3>
+              <p>「开脸」「包浆」「走水」到底指什么？编辑部整理了常用行话与对应解释，便于理解片中对话。</p>
+              <div class="hw-meta"><span>图文 · 阅读 5 分钟</span><span>2026-11-12</span></div>
+            </div>
+          </article>
+          <article class="hw-index-item">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%232f3d34'/%3E%3Crect x='50' y='50' width='380' height='200' fill='none' stroke='%23f0c674' stroke-width='2'/%3E%3Ccircle cx='240' cy='150' r='52' fill='%23d9a441'/%3E%3Cpath d='M222 150l14 14 28-30' stroke='%232f3d34' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="图文索引封面：深绿背景中带勾选标记的金色圆形图标" width="480" height="300">
+            <div>
+              <h3>投稿指南：我们需要什么样的片子</h3>
+              <p>题材范围、技术门槛、授权要求与审核周期，一次说清楚，避免反复沟通，欢迎对照准备。</p>
+              <div class="hw-meta"><span>官方发布 · 阅读 7 分钟</span><span>2026-11-08</span></div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="hw-rank" aria-label="黄仓库本周热度榜">
+          <h3>本周热度榜</h3>
+          <p class="hw-rank-sub">按近七日播放与收藏综合计算</p>
+          <div class="hw-rank-row"><i>01</i><span>旧木箱的第二次生命</span><b>98.2</b></div>
+          <div class="hw-rank-row"><i>02</i><span>仓库灯光实验三盏台灯</span><b>94.7</b></div>
+          <div class="hw-rank-row"><i>03</i><span>旧布头再生三剪法</span><b>91.3</b></div>
+          <div class="hw-rank-row"><i>04</i><span>一座老仓库如何变成拍摄地</span><b>88.9</b></div>
+          <div class="hw-rank-row"><i>05</i><span>无对白影像：午后的灰尘</span><b>85.4</b></div>
+          <div class="hw-rank-row"><i>06</i><span>搬迁记：旧货商的告别</span><b>82.1</b></div>
+          <div class="hw-rank-row"><i>07</i><span>修钟表的人与零件盒</span><b>78.6</b></div>
+          <div class="hw-rank-row"><i>08</i><span>旧藤椅换编全记录</span><b>75.3</b></div>
+          <div class="hw-rank-row"><i>09</i><span>木托盘改墙面书架</span><b>71.8</b></div>
+          <div class="hw-rank-row"><i>10</i><span>仓库清点流程实拍</span><b>68.5</b></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6.5 用户评价 -->
+  <section class="hw-section hw-section-alt" id="hw-reviews">
+    <div class="hw-wrap">
+      <div class="hw-section-head">
+        <span class="hw-eyebrow">Community Voices</span>
+        <h2 class="hw-h2">来自黄仓库社区的真实评价</h2>
+        <div class="hw-h2-line"></div>
+        <p class="hw-sub">这些留言来自投稿人、观众与合作方，语气与关注点各不相同。我们保留原文，只做必要的错别字修正。</p>
+      </div>
+
+      <div class="hw-review-grid">
+        <article class="hw-review">
+          <div class="hw-review-head">
+            <div class="hw-avatar-sm" style="background:#c58f38;">彭</div>
+            <div><strong>彭小满</strong><small>投稿人 · 关注 2 年</small></div>
+          </div>
+          <p>第一次投稿是抱着试试看的心态，没想到编辑部回信写了整整一页修改建议，连分镜顺序都给了替代方案。后来那条片子重新剪了一版，播放比我的预期高很多。这里最难得的是有人愿意认真看你的东西。</p>
+        </article>
+        <article class="hw-review">
+          <div class="hw-review-head">
+            <div class="hw-avatar-sm" style="background:#5b6b58;">徐</div>
+            <div><strong>徐工不爱说话</strong><small>木作爱好者</small></div>
+          </div>
+          <p>老周那期铁皮柜除锈我反复看了三遍，按他说的顺序做，确实比以前直接刷漆好很多。就是有一点，希望以后能标一下环境湿度，我这边南方太潮，不同条件效果差别挺大。</p>
+        </article>
+        <article class="hw-review">
+          <div class="hw-review-head">
+            <div class="hw-avatar-sm" style="background:#a8743a;">万</div>
+            <div><strong>万重山</strong><small>高校影像课教师</small></div>
+          </div>
+          <p>我把布光那期当作课堂材料用过，学生的反馈很好，因为参数和实拍结果都摆出来了，不是空讲理论。唯一的问题是素材包更新有点慢，希望能和片子同步上线。</p>
+        </article>
+        <article class="hw-review">
+          <div class="hw-review-head">
+            <div class="hw-avatar-sm" style="background:#bc7a5e;">梨</div>
+            <div><strong>梨子汽水</strong><small>观众 · 关注 8 个月</small></div>
+          </div>
+          <p>说不上来为什么，看无对白那组片子特别放松。加完班回家放着当背景音，屋子里好像也没那么空了。希望沈迟多拍一点，这种安静的东西现在太少了。</p>
+        </article>
+        <article class="hw-review">
+          <div class="hw-review-head">
+            <div class="hw-avatar-sm" style="background:#7d9b7b;">合</div>
+            <div><strong>合页工作室</strong><small>品牌合作方</small></div>
+          </div>
+          <p>我们委托黄仓库做过一支品牌短片，流程比想象中透明：先给脚本，再给拍摄计划，最后给素材清单和授权文件，每一步都有确认。成片没有过度包装，客户内部反馈是「可信」。</p>
+        </article>
+        <article class="hw-review">
+          <div class="hw-review-head">
+            <div class="hw-avatar-sm" style="background:#8a7148;">老</div>
+            <div><strong>老城区居民</strong><small>在地文化系列观众</small></div>
+          </div>
+          <p>搬迁记那集拍到了我家门口的老铺子，看完有点难受但也很感激，至少有人把这些画面留下来了。要是能再多采访几家就更完整，很多店主的故事还没讲。</p>
+        </article>
+        <article class="hw-review">
+          <div class="hw-review-head">
+            <div class="hw-avatar-sm" style="background:#c58f38;">剪</div>
+            <div><strong>剪辑新手阿哲</strong><small>社区成员</small></div>
+          </div>
+          <p>官网的分镜模板对我帮助最大，以前不知道一场戏该怎么拆，照着填了两遍就有感觉了。提个小建议，模板能不能加一个竖屏版本，我平时主要发短视频。</p>
+        </article>
+        <article class="hw-review">
+          <div class="hw-review-head">
+            <div class="hw-avatar-sm" style="background:#5b6b58;">韩</div>
+            <div><strong>韩梅梅</strong><small>旧衣改造学习者</small></div>
+          </div>
+          <p>跟着阿禾的教程做了第一件围裙，纸样下载很方便，尺寸也标得清楚。唯一需要注意的是不同布料缩水率不一样，我第一版做小了，第二版就学会了先洗再裁。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：FAQ + 企业动态 -->
+  <section class="hw-section" id="hw-faq">
+    <div class="hw-wrap">
+      <div class="hw-section-head">
+        <span class="hw-eyebrow">Help & News</span>
+        <h2 class="hw-h2">常见问题与黄仓库企业动态</h2>
+        <div class="hw-h2-line"></div>
+        <p class="hw-sub">关于观看、投稿、素材授权与合作，这里是官方给出的说明；右侧同步近期企业动态与内容更新日志。</p>
+      </div>
+
+      <div class="hw-faq-dyn">
+        <div class="hw-faq">
+          <details>
+            <summary>黄仓库的片子可以转载或二次使用吗？</summary>
+            <p>标注「官方发布」的片子，欢迎在注明来源与作者的前提下进行非商业转载；如需用于商业用途或二次剪辑，请通过投稿页面的联系入口提交申请，我们会根据素材授权范围给出书面回复。</p>
+          </details>
+          <details>
+            <summary>投稿有设备和题材门槛吗？</summary>
+            <p>没有硬性的设备门槛，手机拍摄同样可以投稿。我们更看重内容的真实性与信息完整度，题材需与黄仓库的三个方向相关：旧物与手艺、空间与城市、创作方法。请确保出镜人员已签署授权。</p>
+          </details>
+          <details>
+            <summary>审核一般需要多久，会收到反馈吗？</summary>
+            <p>常规审核周期为 7 至 14 个工作日，节假日顺延。无论是否通过，编辑部都会给出简要反馈；未通过的作品可以在修改后重新提交，次数不限。</p>
+          </details>
+          <details>
+            <summary>素材包和分镜模板如何下载？</summary>
+            <p>注册并登录社区账号后，在对应视频页面点击下载按钮即可获取。素材包按季度归档，包含仓库实景片段、环境音与分镜表，仅供学习与练习使用，不得转售。</p>
+          </details>
+          <details>
+            <summary>三分钟短片挑战的评审标准是什么？</summary>
+            <p>评审分为三项：叙事清晰度、现场感、信息完整度，各占一定权重。我们不鼓励刻意煽情，更看重你是否把一个具体的事情讲清楚，以及素材使用是否符合授权要求。</p>
+          </details>
+          <details>
+            <summary>品牌合作可以做什么类型的内容？</summary>
+            <p>常见合作包括品牌纪录短片、产品工艺记录、场地空间介绍与创作者联名企划。我们会在成片中明确标注「品牌委托」，并保留编辑部的独立审核权，以保证内容的可信度。</p>
+          </details>
+          <details>
+            <summary>为什么有些视频没有配乐？</summary>
+            <p>这是黄仓库的内容选择之一。现场声往往包含更多有效信息，例如工具碰撞、脚步与呼吸，去掉配乐可以让观众更专注于工艺本身。部分片子会额外提供配乐版本，供不同观看场景选择。</p>
+          </details>
+        </div>
+
+        <div>
+          <h3 class="hw-h3" style="margin-bottom:12px;">企业动态与更新日志</h3>
+          <div class="hw-dyn-item">
+            <span class="hw-dyn-date">11-20</span>
+            <div>
+              <h3>第三期旧物改造成片合集上线</h3>
+              <p>新增 12 条高清短纪录与 4 份可下载分镜表，涵盖木作、缝纫与金属修复三个门类。</p>
+            </div>
+          </div>
+          <div class="hw-dyn-item">
+            <span class="hw-dyn-date">11-15</span>
+            <div>
+              <h3>官网素材库完成季度归档</h3>
+              <p>2026 年第三季度仓库实景片段与环境音已整理完毕，新增检索标签与时长筛选。</p>
+            </div>
+          </div>
+          <div class="hw-dyn-item">
+            <span class="hw-dyn-date">11-08</span>
+            <div>
+              <h3>三分钟短片挑战第四季开启报名</h3>
+              <p>本季主题为「一件物品的十年」，提交截止 12 月 18 日，评审团由编辑部与三位创作者组成。</p>
+            </div>
+          </div>
+          <div class="hw-dyn-item">
+            <span class="hw-dyn-date">10-30</span>
+            <div>
+              <h3>与两家在地文化机构达成内容合作</h3>
+              <p>合作方向为街区档案整理与口述记录，相关成果将以短片与图文索引形式在官网发布。</p>
+            </div>
+          </div>
+          <div class="hw-dyn-item">
+            <span class="hw-dyn-date">10-22</span>
+            <div>
+              <h3>创作者后台新增授权文件管理</h3>
+              <p>投稿人可在线归档出镜授权与素材来源说明，审核流程同步提速，平均周期缩短约三天。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7.5 投稿 / 联系 CTA -->
+  <section class="hw-section" id="hw-join" style="padding-top:0;">
+    <div class="hw-wrap">
+      <div class="hw-cta-panel">
+        <div>
+          <h2 class="hw-h2" style="margin-bottom:8px;">把你的仓库故事，交给黄仓库发布</h2>
+          <p>无论是一段修复记录、一次城市走访，还是一份剪辑方法，只要真实、具体、愿意接受讨论，都欢迎投稿。编辑部会认真看完每一条，并给出可执行的修改建议。</p>
+        </div>
+        <div class="hw-cta-actions">
+          <button class="hw-btn hw-btn-amber" type="button" data-hw-modal="hwModalSubmit">我要投稿</button>
+          <button class="hw-btn hw-btn-line" type="button" data-hw-modal="hwModalShare">分享官网</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="hw-footer">
+  <div class="hw-wrap">
+    <div class="hw-footer-grid">
+      <div>
+        <div class="hw-footer-brand">
+          <span class="hw-logo-mark" aria-hidden="true"><span></span></span>
+          <strong>黄仓库</strong>
+        </div>
+        <p>黄仓库官方网站，聚焦仓储美学与旧物新生的原创视频品牌。我们以专业制作与正版素材，持续运营一个值得信赖的内容生态，服务创作者、社区与企业合作方。</p>
+        <p>官方发布 · 每周三、周六更新 · 精品内容长期归档</p>
+      </div>
+      <div>
+        <h4>浏览内容</h4>
+        <ul>
+          <li><a href="#hw-videos">精选影像</a></li>
+          <li><a href="#hw-topics">专题企划</a></li>
+          <li><a href="#hw-authors">创作者矩阵</a></li>
+          <li><a href="#hw-index">图文索引</a></li>
+          <li><a href="#hw-reviews">社区口碑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与黄仓库</h4>
+        <ul>
+          <li><a href="#hw-join">投稿入口</a></li>
+          <li><a href="#hw-faq">帮助与常见问题</a></li>
+          <li><a href="#hw-topics">短片挑战报名</a></li>
+          <li><a href="#hw-faq">素材授权说明</a></li>
+          <li><a href="#hw-index">分镜模板下载</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系与合作</h4>
+        <ul>
+          <li>内容合作：brand@huangcangku.example</li>
+          <li>投稿咨询：submit@huangcangku.example</li>
+          <li>素材授权：license@huangcangku.example</li>
+          <li>办公地址：老粮站创意园 3 号仓</li>
+          <li>工作时间：周一至周五 10:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hw-footer-bottom">
+      <span>© 2017–2026 黄仓库 版权所有 · 官方网站 · 持续运营中</span>
+      <span>备案号：示例备案 00000000 号 · 广播电视节目制作经营许可（示例）</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="hw-toast" id="hwToast" role="status" aria-live="polite"></div>
+
+<!-- 举报/反馈弹窗 -->
+<div class="hw-modal" id="hwModalReport" role="dialog" aria-modal="true" aria-labelledby="hwReportTitle">
+  <div class="hw-modal-box">
+    <button class="hw-modal-close" type="button" data-hw-close aria-label="关闭">×</button>
+    <h3 id="hwReportTitle">反馈与举报</h3>
+    <p class="hw-modal-sub">请描述你遇到的问题，编辑部会在 3 个工作日内核实处理。</p>
+    <div class="hw-field">
+      <label for="hwReportType">问题类型</label>
+      <input id="hwReportType" type="text" placeholder="例如：内容错误 / 授权疑问 / 播放异常">
+    </div>
+    <div class="hw-field">
+      <label for="hwReportText">详细说明</label>
+      <textarea id="hwReportText" placeholder="请尽量写清涉及的片名与时间点"></textarea>
+    </div>
+    <div class="hw-modal-actions">
+      <button class="hw-btn hw-btn-ghost" type="button" data-hw-close>取消</button>
+      <button class="hw-btn hw-btn-primary" type="button" id="hwReportSubmit">提交反馈</button>
+    </div>
+  </div>
+</div>
+
+<!-- 投稿弹窗 -->
+<div class="hw-modal" id="hwModalSubmit" role="dialog" aria-modal="true" aria-labelledby="hwSubmitTitle">
+  <div class="hw-modal-box">
+    <button class="hw-modal-close" type="button" data-hw-close aria-label="关闭">×</button>
+    <h3 id="hwSubmitTitle">投稿给黄仓库</h3>
+    <p class="hw-modal-sub">填写基本信息即可，编辑部会主动联系你补充素材与授权文件。</p>
+    <div class="hw-field">
+      <label for="hwSubmitName">你的昵称</label>
+      <input id="hwSubmitName" type="text" placeholder="将展示在作品署名位置">
+    </div>
+    <div class="hw-field">
+      <label for="hwSubmitTitleInput">作品标题</label>
+      <input id="hwSubmitTitleInput" type="text" placeholder="例如：旧铁架的重组实验">
+    </div>
+    <div class="hw-field">
+      <label for="hwSubmitDesc">一句话简介</label>
+      <textarea id="hwSubmitDesc" placeholder="题材、拍摄方式、时长与你希望传达的重点"></textarea>
+    </div>
+    <div class="hw-modal-actions">
+      <button class="hw-btn hw-btn-ghost" type="button" data-hw-close>取消</button>
+      <button class="hw-btn hw-btn-primary" type="button" id="hwSubmitSend">提交投稿</button>
+    </div>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="hw-modal" id="hwModalShare" role="dialog" aria-modal="true" aria-labelledby="hwShareTitle">
+  <div class="hw-modal-box">
+    <button class="hw-modal-close" type="button" data-hw-close aria-label="关闭">×</button>
+    <h3 id="hwShareTitle">分享黄仓库官网</h3>
+    <p class="hw-modal-sub">选择一种方式分享给同好，或直接复制页面链接。</p>
+    <div class="hw-ops">
+      <button class="hw-op" type="button" data-hw-copy>复制链接</button>
+      <button class="hw-op" type="button" data-hw-toast="已生成微信分享提示">微信</button>
+      <button class="hw-op" type="button" data-hw-toast="已生成微博分享提示">微博</button>
+      <button class="hw-op" type="button" data-hw-toast="已生成 QQ 分享提示">QQ</button>
+    </div>
+    <div class="hw-modal-actions" style="margin-top:18px;">
+      <button class="hw-btn hw-btn-ghost" type="button" data-hw-close>关闭</button>
+    </div>
+  </div>
+</div>
+
+<button class="hw-to-top" id="hwToTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 通用 Toast ---------- */
+  var toastEl = document.getElementById('hwToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('is-show');
+    }, 2200);
+  }
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var navToggle = document.getElementById('hwNavToggle');
+  var mainNav = document.getElementById('hwMainNav');
+  if(navToggle && mainNav){
+    navToggle.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.textContent = open ? '×' : '☰';
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 860){
+        mainNav.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded','false');
+        navToggle.textContent = '☰';
+      }
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('hwSearchInput');
+  var searchBtn = document.getElementById('hwSearchBtn');
+  var feedback = document.getElementById('hwSearchFeedback');
+  var searchMsg = document.getElementById('hwSearchMsg');
+  var chips = feedback ? feedback.querySelectorAll('.hw-chip') : [];
+
+  function runSearch(kw){
+    var value = (kw || '').trim();
+    if(!feedback) return;
+    feedback.classList.add('is-on');
+    if(!value){
+      searchMsg.textContent = '试试这些关键词：';
+      return;
+    }
+    searchMsg.textContent = '已为「' + value + '」匹配到相关影像与图文，可先浏览下方的精选影像与专题企划。';
+    chips.forEach(function(c){
+      c.classList.toggle('is-active', c.textContent.trim() === value);
+    });
+  }
+  if(searchBtn){
+    searchBtn.addEventListener('click', function(){ runSearch(searchInput.value); });
+  }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        runSearch(searchInput.value);
+      }
+    });
+    searchInput.addEventListener('input', function(){
+      if(!searchInput.value.trim() && feedback){
+        feedback.classList.remove('is-on');
+      }
+    });
+  }
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var kw = chip.textContent.trim();
+      if(searchInput) searchInput.value = kw;
+      runSearch(kw);
+    });
+  });
+
+  /* ---------- 点赞 ---------- */
+  function parseCount(text){
+    var raw = (text || '').replace(/[^\d.]/g,'');
+    if(!raw) return {num:0, unit:''};
+    if(text.indexOf('万') > -1){
+      return {num: parseFloat(raw), unit:'万'};
+    }
+    return {num: parseInt(raw,10) || 0, unit:''};
+  }
+  function formatCount(obj){
+    if(obj.unit === '万'){
+      var v = Math.round(obj.num * 10) / 10;
+      return v + '万';
+    }
+    return String(obj.num);
+  }
+  document.querySelectorAll('[data-hw-like]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      var b = btn.querySelector('b');
+      var target = b || btn;
+      var parsed = parseCount(target.textContent);
+      var liked = btn.classList.toggle('is-liked');
+      if(parsed.unit === '万'){
+        parsed.num = Math.max(0, parsed.num + (liked ? 0.1 : -0.1));
+      }else{
+        parsed.num = Math.max(0, parsed.num + (liked ? 1 : -1));
+      }
+      target.textContent = formatCount({num: parsed.num, unit: parsed.unit});
+      btn.classList.toggle('is-liked', liked);
+      showToast(liked ? '已点赞，感谢支持' : '已取消点赞');
+    });
+  });
+
+  /* ---------- 收藏 ---------- */
+  document.querySelectorAll('[data-hw-save]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      var saved = btn.classList.toggle('is-saved');
+      if(saved){
+        btn.textContent = '★ 已收藏';
+        showToast('已加入收藏');
+      }else{
+        btn.textContent = '☆ 收藏';
+        showToast('已取消收藏');
+      }
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  function fallbackCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly','');
+    ta.style.position = 'fixed';
+    ta.style.top = '-1000px';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try{ ok = document.execCommand('copy'); }catch(err){ ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+  document.querySelectorAll('[data-hw-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      var text = '黄仓库官网 · 一部关于旧物与新生的影像档案（可向编辑部索取分享链接）';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('链接已复制到剪贴板');
+        }).catch(function(){
+          showToast(fallbackCopy(text) ? '链接已复制到剪贴板' : '复制失败，请手动复制');
+        });
+      }else{
+        showToast(fallbackCopy(text) ? '链接已复制到剪贴板' : '复制失败，请手动复制');
+      }
+    });
+  });
+
+  /* ---------- 通用提示按钮 ---------- */
+  document.querySelectorAll('[data-hw-toast]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showToast(btn.getAttribute('data-hw-toast'));
+    });
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var modalTrigger = document.querySelectorAll('[data-hw-modal]');
+  var modals = document.querySelectorAll('.hw-modal');
+  function openModal(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    modals.forEach(function(m){ m.classList.remove('is-open'); });
+    el.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    var firstInput = el.querySelector('input, textarea, button');
+    if(firstInput) firstInput.focus();
+  }
+  function closeModals(){
+    modals.forEach(function(m){ m.classList.remove('is-open'); });
+    document.body.style.overflow = '';
+  }
+  modalTrigger.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      openModal(btn.getAttribute('data-hw-modal'));
+    });
+  });
+  document.querySelectorAll('[data-hw-close]').forEach(function(btn){
+    btn.addEventListener('click', closeModals);
+  });
+  modals.forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m) closeModals();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModals();
+  });
+
+  var reportSubmit = document.getElementById('hwReportSubmit');
+  if(reportSubmit){
+    reportSubmit.addEventListener('click', function(){
+      var t = document.getElementById('hwReportType');
+      if(t && !t.value.trim()){
+        showToast('请先填写问题类型');
+        t.focus();
+        return;
+      }
+      closeModals();
+      showToast('反馈已提交，编辑部会尽快核实');
+    });
+  }
+  var submitSend = document.getElementById('hwSubmitSend');
+  if(submitSend){
+    submitSend.addEventListener('click', function(){
+      var n = document.getElementById('hwSubmitName');
+      var tt = document.getElementById('hwSubmitTitleInput');
+      if(n && !n.value.trim()){
+        showToast('请填写你的昵称');
+        n.focus();
+        return;
+      }
+      if(tt && !tt.value.trim()){
+        showToast('请填写作品标题');
+        tt.focus();
+        return;
+      }
+      closeModals();
+      showToast('投稿信息已收到，编辑将主动联系');
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = document.getElementById('hwToTop');
+  window.addEventListener('scroll', function(){
+    if(!toTop) return;
+    if(window.scrollY > 520){
+      toTop.classList.add('is-show');
+    }else{
+      toTop.classList.remove('is-show');
+    }
+  }, {passive:true});
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ---------- 入场轻微动效（尊重减少动态偏好） ---------- */
+  if(document.querySelectorAll && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var cards = document.querySelectorAll('.hw-vf-card, .hw-topic, .hw-author, .hw-review, .hw-index-item');
+    cards.forEach(function(c){
+      c.style.transition = 'transform .22s ease, box-shadow .22s ease, border-color .22s ease';
+    });
+  }
+})();
+</script>
+</body>
+  </html>
